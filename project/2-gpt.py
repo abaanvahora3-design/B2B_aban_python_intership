@@ -9,11 +9,13 @@ print(url)
 video_id = url.replace('https://www.youtube.com/watch?v=', '')
 print(video_id)
 
-transcript = YouTubeTranscriptApi.fetch(video_id, languages=["en"])
+transcript = YouTubeTranscriptApi().fetch(video_id)
+
 
 output=''
+
 for x in transcript:
-  sentence = x['text']
+  sentence = x.text
   output += f' {sentence}\n'
 
 response = genai.ChatCompletion.create(
@@ -26,7 +28,7 @@ response = genai.ChatCompletion.create(
 )
 summary = response["choices"][0]["message"]["content"]
 
-response = openai.ChatCompletion.create(
+response = genai.ChatCompletion.create(
   model="gpt-3.5-turbo",
   messages=[
     {"role": "system", "content": "You are a journalist."},
@@ -41,6 +43,3 @@ print(summary)
 print('>>>TAGS:')
 print(tag)
 print('>>>OUTPUT:')
-#print(output)
-
-#print(transcript)

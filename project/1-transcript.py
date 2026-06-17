@@ -12,7 +12,7 @@ print(transcript)
 
 output=''
 for x in transcript:
-  sentence = x ['text']
+  sentence = x.text
   output += f' {sentence}\n'
 
-print(output)
+print(output) 
