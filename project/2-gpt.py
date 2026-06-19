@@ -3,7 +3,7 @@ from google import genai
 
 
 #client= genai.Client(api_key="AQ.Ab8RN6LdSk-LVYWITFGk8KwWexoqJaydolrzZkYK-8qn7W_1Ug")
-# genai.api_key = 'AQ.Ab8RN6LdSk-LVYWITFGk8KwWexoqJaydolrzZkYK-8qn7W_1Ug'
+genai.api_key = 'Your APi key'
 
 url = 'https://www.youtube.com/watch?v=UCGaKvZpJYc'
 print(url)
