@@ -1,7 +1,7 @@
 from youtube_transcript_api import YouTubeTranscriptApi
 from google import genai
 
-genai.api_key = 'AQ.Ab8RN6LdSk-LVYWITFGk8KwWexoqJaydolrzZkYK-8qn7W_1Ug'
+# genai.api_key = 'AQ.Ab8RN6LdSk-LVYWITFGk8KwWexoqJaydolrzZkYK-8qn7W_1Ug'
 
 url = 'https://www.youtube.com/watch?v=UCGaKvZpJYc'
 print(url)
