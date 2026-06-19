@@ -9,7 +9,7 @@ print(url)
 video_id = url.replace('https://www.youtube.com/watch?v=', '')
 print(video_id)
 
-transcript = YouTubeTranscriptApi.fetch(video_id)
+transcript = YouTubeTranscriptApi().fetch(video_id, languages=["en"])
 
 response = genai.ChatCompletion.create(
   model="gpt-3.5-turbo-16k",
