@@ -1,0 +1,14 @@
+[
+    {
+        "name": "John",
+        "marks": 85
+    },
+    {
+        "name": "Alice",
+        "marks": 92
+    },
+    {
+        "name": "Bob",
+        "marks": 78
+    }
+]
